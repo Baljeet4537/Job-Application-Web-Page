@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="js" href="index.js" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-box1">
+        <h2>Job Application <h3>(web)</h3></h2>
+      </div>
+      <div class="input-filed">
+        <form action="#">
+          <div class="input-box">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" />
+          </div>
+          <div class="input-box">
+            <label for="secondName">Second Name</label>
+            <input type="text" name="secondName" id="secondName" />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="input-box">
+            <label for="jobRole">Job Role</label>
+            <input type="text" id="jobRoleInput" list="jobRoleList" placeholder="Choose Job Role"/>
+            <!-- Datalist containing predefined options -->
+            <datalist id="jobRoleList">
+              <option value="Software Engineer"></option>
+              <option value="Web Developer"></option>
+              <option value="Manual Tester"></option>
+              <option value="Automation Tester"></option>
+              <option value="Android Developer"></option>
+            </datalist>
+          </div>
+          <div class="input-box">
+            <label for="city">City</label>
+            <input type="text" id="city" />
+          </div>
+          <div class="input-box">
+            <label for="pincode">Pin-code</label>
+            <input type="text" id="pincode" />
+          </div>
+          <div class="input-box1">
+            <label for="address" id="add-label">Address</label>
+            <input type="text" id="address" />
+          </div>
+          <div class="input-box">
+            <label for="date">Start Date</label>
+            <input type="date" id="startDate" />
+          </div>
+          <div class="input-box">
+            <label for="file">Resume</label>
+            <input type="file" id="file" />
+          </div>
+          <div class="input-box" id="btn">
+            <button type="submit">Apply Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
